@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Guardian Angel Are You? - Personality Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Which Guardian Angel Are You?</h1>
+            <p class="subtitle">If you would've been an angel, which angel are you?</p>
+        </header>
+
+        <div class="test-container">
+            <div id="progress-container">
+                <div class="progress-labels">
+                    <span id="question-counter">Question 1/16</span>
+                    <span id="dimension-indicator">Exploring your energy.</span>
+                </div>
+                <div id="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+
+            <div id="question-container">
+                <div class="story-scenario" id="scenario"></div>
+                <div class="story-question" style="text-align: center;" id="current-question"></div>
+                <div class="choices">
+                    <button class="choice-btn" id="choice1"></button>
+                    <button class="choice-btn" id="choice2"></button>
+                </div>
+            </div>
+
+            <div id="result-container" style="display: none;">
+                <h2>Your Guardian Angel Type:</h2>
+                <div id="type-result"></div>
+                <div id="angel-name"></div>
+                <div class="type-breakdown">
+                    <div class="dimension" id="ei-result"></div>
+                    <div class="dimension" id="sn-result"></div>
+                    <div class="dimension" id="ft-result"></div>
+                    <div class="dimension" id="jp-result"></div>
+                </div>
+                <div id="angel-description"></div>
+                <button id="restart-btn">Take Test Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
